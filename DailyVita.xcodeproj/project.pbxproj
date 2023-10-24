@@ -13,6 +13,26 @@
 		05108C3C2AE6BFC2003CC121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05108C3A2AE6BFC2003CC121 /* Main.storyboard */; };
 		05108C3E2AE6BFC3003CC121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05108C3D2AE6BFC3003CC121 /* Assets.xcassets */; };
 		05108C412AE6BFC3003CC121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05108C3F2AE6BFC3003CC121 /* LaunchScreen.storyboard */; };
+		0534354D2AE7F6ED0023BB98 /* FormOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534354B2AE7F6ED0023BB98 /* FormOneViewController.swift */; };
+		0534354E2AE7F6ED0023BB98 /* FormOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0534354C2AE7F6ED0023BB98 /* FormOneViewController.xib */; };
+		053435532AE7F7120023BB98 /* FormTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053435512AE7F7120023BB98 /* FormTwoViewController.swift */; };
+		053435542AE7F7120023BB98 /* FormTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053435522AE7F7120023BB98 /* FormTwoViewController.xib */; };
+		053435572AE7F72D0023BB98 /* FormThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053435552AE7F72D0023BB98 /* FormThreeViewController.swift */; };
+		053435582AE7F72D0023BB98 /* FormThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053435562AE7F72D0023BB98 /* FormThreeViewController.xib */; };
+		0534355B2AE7F73A0023BB98 /* FormFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053435592AE7F73A0023BB98 /* FormFourViewController.swift */; };
+		0534355C2AE7F73A0023BB98 /* FormFourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0534355A2AE7F73A0023BB98 /* FormFourViewController.xib */; };
+		053435602AE7F9770023BB98 /* ParentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534355E2AE7F9770023BB98 /* ParentFormViewController.swift */; };
+		053435612AE7F9770023BB98 /* ParentFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0534355F2AE7F9770023BB98 /* ParentFormViewController.xib */; };
+		053435642AE8008F0023BB98 /* Healthconcern.json in Resources */ = {isa = PBXBuildFile; fileRef = 053435632AE8008F0023BB98 /* Healthconcern.json */; };
+		053435662AE800A30023BB98 /* Diets.json in Resources */ = {isa = PBXBuildFile; fileRef = 053435652AE800A30023BB98 /* Diets.json */; };
+		053435682AE800B20023BB98 /* allergies.json in Resources */ = {isa = PBXBuildFile; fileRef = 053435672AE800B20023BB98 /* allergies.json */; };
+		0534356C2AE801A90023BB98 /* HealthConcernData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534356B2AE801A90023BB98 /* HealthConcernData.swift */; };
+		0534356E2AE802160023BB98 /* DietsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534356D2AE802160023BB98 /* DietsData.swift */; };
+		053435702AE802550023BB98 /* AllergiesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534356F2AE802550023BB98 /* AllergiesData.swift */; };
+		053435732AE803D50023BB98 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053435722AE803D50023BB98 /* Bundle+Extension.swift */; };
+		0534357B2AE80B730023BB98 /* HealthConcernTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053435792AE80B730023BB98 /* HealthConcernTableViewCell.swift */; };
+		0534357C2AE80B730023BB98 /* HealthConcernTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0534357A2AE80B730023BB98 /* HealthConcernTableViewCell.xib */; };
+		FEAD6DA27327ABBA63EA26FE /* Pods_DailyVita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94BB6A8625384104424FAC9 /* Pods_DailyVita.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +44,28 @@
 		05108C3D2AE6BFC3003CC121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05108C402AE6BFC3003CC121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05108C422AE6BFC3003CC121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0534354B2AE7F6ED0023BB98 /* FormOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormOneViewController.swift; sourceTree = "<group>"; };
+		0534354C2AE7F6ED0023BB98 /* FormOneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormOneViewController.xib; sourceTree = "<group>"; };
+		053435512AE7F7120023BB98 /* FormTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTwoViewController.swift; sourceTree = "<group>"; };
+		053435522AE7F7120023BB98 /* FormTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTwoViewController.xib; sourceTree = "<group>"; };
+		053435552AE7F72D0023BB98 /* FormThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormThreeViewController.swift; sourceTree = "<group>"; };
+		053435562AE7F72D0023BB98 /* FormThreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormThreeViewController.xib; sourceTree = "<group>"; };
+		053435592AE7F73A0023BB98 /* FormFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFourViewController.swift; sourceTree = "<group>"; };
+		0534355A2AE7F73A0023BB98 /* FormFourViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormFourViewController.xib; sourceTree = "<group>"; };
+		0534355E2AE7F9770023BB98 /* ParentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentFormViewController.swift; sourceTree = "<group>"; };
+		0534355F2AE7F9770023BB98 /* ParentFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParentFormViewController.xib; sourceTree = "<group>"; };
+		053435632AE8008F0023BB98 /* Healthconcern.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Healthconcern.json; sourceTree = "<group>"; };
+		053435652AE800A30023BB98 /* Diets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Diets.json; sourceTree = "<group>"; };
+		053435672AE800B20023BB98 /* allergies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = allergies.json; sourceTree = "<group>"; };
+		0534356B2AE801A90023BB98 /* HealthConcernData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthConcernData.swift; sourceTree = "<group>"; };
+		0534356D2AE802160023BB98 /* DietsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietsData.swift; sourceTree = "<group>"; };
+		0534356F2AE802550023BB98 /* AllergiesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergiesData.swift; sourceTree = "<group>"; };
+		053435722AE803D50023BB98 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		053435792AE80B730023BB98 /* HealthConcernTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthConcernTableViewCell.swift; sourceTree = "<group>"; };
+		0534357A2AE80B730023BB98 /* HealthConcernTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthConcernTableViewCell.xib; sourceTree = "<group>"; };
+		68F5916F1FDC22AEBF37FD9A /* Pods-DailyVita.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyVita.release.xcconfig"; path = "Target Support Files/Pods-DailyVita/Pods-DailyVita.release.xcconfig"; sourceTree = "<group>"; };
+		9A7B12076D309A71C53A0AEA /* Pods-DailyVita.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyVita.debug.xcconfig"; path = "Target Support Files/Pods-DailyVita/Pods-DailyVita.debug.xcconfig"; sourceTree = "<group>"; };
+		D94BB6A8625384104424FAC9 /* Pods_DailyVita.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyVita.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEAD6DA27327ABBA63EA26FE /* Pods_DailyVita.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +85,8 @@
 			children = (
 				05108C332AE6BFC2003CC121 /* DailyVita */,
 				05108C322AE6BFC2003CC121 /* Products */,
+				5895746D1055834A83CE7CC1 /* Pods */,
+				4FDA1B2375D4D6C77755FBF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +101,10 @@
 		05108C332AE6BFC2003CC121 /* DailyVita */ = {
 			isa = PBXGroup;
 			children = (
+				053435712AE803C20023BB98 /* Extension */,
+				053435692AE801880023BB98 /* Data */,
+				053435622AE800720023BB98 /* JSON */,
+				053435442AE7F50F0023BB98 /* Module */,
 				05108C342AE6BFC2003CC121 /* AppDelegate.swift */,
 				05108C362AE6BFC2003CC121 /* SceneDelegate.swift */,
 				05108C382AE6BFC2003CC121 /* ViewController.swift */,
@@ -67,6 +116,150 @@
 			path = DailyVita;
 			sourceTree = "<group>";
 		};
+		053435442AE7F50F0023BB98 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				0534355D2AE7F9570023BB98 /* ParentForm */,
+				0534354A2AE7F6CD0023BB98 /* FormOne */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		0534354A2AE7F6CD0023BB98 /* FormOne */ = {
+			isa = PBXGroup;
+			children = (
+				053435762AE80B2E0023BB98 /* Cell */,
+				053435752AE80B1F0023BB98 /* ViewController */,
+				053435742AE80A920023BB98 /* ViewModel */,
+			);
+			path = FormOne;
+			sourceTree = "<group>";
+		};
+		0534354F2AE7F6FA0023BB98 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				0534354C2AE7F6ED0023BB98 /* FormOneViewController.xib */,
+				053435522AE7F7120023BB98 /* FormTwoViewController.xib */,
+				053435562AE7F72D0023BB98 /* FormThreeViewController.xib */,
+				0534355A2AE7F73A0023BB98 /* FormFourViewController.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		053435502AE7F6FF0023BB98 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				0534354B2AE7F6ED0023BB98 /* FormOneViewController.swift */,
+				053435512AE7F7120023BB98 /* FormTwoViewController.swift */,
+				053435552AE7F72D0023BB98 /* FormThreeViewController.swift */,
+				053435592AE7F73A0023BB98 /* FormFourViewController.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		0534355D2AE7F9570023BB98 /* ParentForm */ = {
+			isa = PBXGroup;
+			children = (
+				0534355E2AE7F9770023BB98 /* ParentFormViewController.swift */,
+				0534355F2AE7F9770023BB98 /* ParentFormViewController.xib */,
+			);
+			path = ParentForm;
+			sourceTree = "<group>";
+		};
+		053435622AE800720023BB98 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				053435672AE800B20023BB98 /* allergies.json */,
+				053435652AE800A30023BB98 /* Diets.json */,
+				053435632AE8008F0023BB98 /* Healthconcern.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		053435692AE801880023BB98 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0534356A2AE801910023BB98 /* VO */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0534356A2AE801910023BB98 /* VO */ = {
+			isa = PBXGroup;
+			children = (
+				0534356B2AE801A90023BB98 /* HealthConcernData.swift */,
+				0534356D2AE802160023BB98 /* DietsData.swift */,
+				0534356F2AE802550023BB98 /* AllergiesData.swift */,
+			);
+			path = VO;
+			sourceTree = "<group>";
+		};
+		053435712AE803C20023BB98 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				053435722AE803D50023BB98 /* Bundle+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		053435742AE80A920023BB98 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		053435752AE80B1F0023BB98 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				053435502AE7F6FF0023BB98 /* Swift */,
+				0534354F2AE7F6FA0023BB98 /* Xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		053435762AE80B2E0023BB98 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				053435782AE80B4D0023BB98 /* Swift */,
+				053435772AE80B350023BB98 /* Xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		053435772AE80B350023BB98 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				0534357A2AE80B730023BB98 /* HealthConcernTableViewCell.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		053435782AE80B4D0023BB98 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				053435792AE80B730023BB98 /* HealthConcernTableViewCell.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		4FDA1B2375D4D6C77755FBF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D94BB6A8625384104424FAC9 /* Pods_DailyVita.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5895746D1055834A83CE7CC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A7B12076D309A71C53A0AEA /* Pods-DailyVita.debug.xcconfig */,
+				68F5916F1FDC22AEBF37FD9A /* Pods-DailyVita.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +267,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05108C452AE6BFC3003CC121 /* Build configuration list for PBXNativeTarget "DailyVita" */;
 			buildPhases = (
+				51D8219DE6BC57000ABB092C /* [CP] Check Pods Manifest.lock */,
 				05108C2D2AE6BFC2003CC121 /* Sources */,
 				05108C2E2AE6BFC2003CC121 /* Frameworks */,
 				05108C2F2AE6BFC2003CC121 /* Resources */,
@@ -125,13 +319,47 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0534357C2AE80B730023BB98 /* HealthConcernTableViewCell.xib in Resources */,
 				05108C412AE6BFC3003CC121 /* LaunchScreen.storyboard in Resources */,
+				053435662AE800A30023BB98 /* Diets.json in Resources */,
+				0534354E2AE7F6ED0023BB98 /* FormOneViewController.xib in Resources */,
+				053435612AE7F9770023BB98 /* ParentFormViewController.xib in Resources */,
+				0534355C2AE7F73A0023BB98 /* FormFourViewController.xib in Resources */,
 				05108C3E2AE6BFC3003CC121 /* Assets.xcassets in Resources */,
+				053435542AE7F7120023BB98 /* FormTwoViewController.xib in Resources */,
 				05108C3C2AE6BFC2003CC121 /* Main.storyboard in Resources */,
+				053435642AE8008F0023BB98 /* Healthconcern.json in Resources */,
+				053435682AE800B20023BB98 /* allergies.json in Resources */,
+				053435582AE7F72D0023BB98 /* FormThreeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51D8219DE6BC57000ABB092C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyVita-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		05108C2D2AE6BFC2003CC121 /* Sources */ = {
@@ -141,6 +369,16 @@
 				05108C392AE6BFC2003CC121 /* ViewController.swift in Sources */,
 				05108C352AE6BFC2003CC121 /* AppDelegate.swift in Sources */,
 				05108C372AE6BFC2003CC121 /* SceneDelegate.swift in Sources */,
+				0534356C2AE801A90023BB98 /* HealthConcernData.swift in Sources */,
+				0534354D2AE7F6ED0023BB98 /* FormOneViewController.swift in Sources */,
+				053435732AE803D50023BB98 /* Bundle+Extension.swift in Sources */,
+				0534357B2AE80B730023BB98 /* HealthConcernTableViewCell.swift in Sources */,
+				053435702AE802550023BB98 /* AllergiesData.swift in Sources */,
+				053435532AE7F7120023BB98 /* FormTwoViewController.swift in Sources */,
+				0534355B2AE7F73A0023BB98 /* FormFourViewController.swift in Sources */,
+				053435602AE7F9770023BB98 /* ParentFormViewController.swift in Sources */,
+				053435572AE7F72D0023BB98 /* FormThreeViewController.swift in Sources */,
+				0534356E2AE802160023BB98 /* DietsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +520,7 @@
 		};
 		05108C462AE6BFC3003CC121 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A7B12076D309A71C53A0AEA /* Pods-DailyVita.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +549,7 @@
 		};
 		05108C472AE6BFC3003CC121 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68F5916F1FDC22AEBF37FD9A /* Pods-DailyVita.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
