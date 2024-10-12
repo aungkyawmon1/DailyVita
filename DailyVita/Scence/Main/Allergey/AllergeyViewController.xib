@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllergeyViewController" customModule="DailyVita" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write any specific allergeies or sensitivity towards specific things. (optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qp-TM-cIQ">
+                    <rect key="frame" x="20" y="107" width="353" height="33.666666666666657"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2r-dc-c0F">
+                    <rect key="frame" x="0.0" y="714" width="393" height="104"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Uhy-vv-vPF">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="48"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qxn-QL-inS">
+                                    <rect key="frame" x="20" y="0.0" width="166.66666666666666" height="48"/>
+                                    <color key="tintColor" name="primaryColor"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Button">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="Back">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="AkayaKanadaka-Regular"/>
+                                                    <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </state>
+                                    <buttonConfiguration key="configuration" style="plain" title="Back">
+                                        <fontDescription key="titleFontDescription" name="AkayaKanadaka-Regular" family="AkayaKanadaka" pointSize="17"/>
+                                    </buttonConfiguration>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcJ-30-Z7Z">
+                                    <rect key="frame" x="206.66666666666663" y="0.0" width="166.33333333333337" height="48"/>
+                                    <color key="backgroundColor" name="primaryColor"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="bAy-41-mCR"/>
+                            </constraints>
+                            <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="20"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Uhy-vv-vPF" secondAttribute="trailing" id="4Qf-KN-IdA"/>
+                        <constraint firstAttribute="height" constant="104" id="Dty-oG-0Ln"/>
+                        <constraint firstItem="Uhy-vv-vPF" firstAttribute="leading" secondItem="z2r-dc-c0F" secondAttribute="leading" id="h7C-wp-7Of"/>
+                        <constraint firstItem="Uhy-vv-vPF" firstAttribute="top" secondItem="z2r-dc-c0F" secondAttribute="top" id="moO-ay-gcM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="backgroundColor"/>
+            <constraints>
+                <constraint firstItem="z2r-dc-c0F" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="8cp-Zv-E11"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="z2r-dc-c0F" secondAttribute="bottom" id="HSz-iV-qtP"/>
+                <constraint firstItem="z2r-dc-c0F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JJx-Ft-mkA"/>
+                <constraint firstItem="9Qp-TM-cIQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Sn0-Jd-HVq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9Qp-TM-cIQ" secondAttribute="trailing" constant="20" id="XPg-kv-Gu6"/>
+                <constraint firstItem="9Qp-TM-cIQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="48" id="xQm-cc-F4V"/>
+            </constraints>
+            <point key="canvasLocation" x="-11" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="backgroundColor">
+            <color red="0.85098039215686272" green="0.94901960784313721" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryColor">
+            <color red="0.93725490196078431" green="0.42352941176470588" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
