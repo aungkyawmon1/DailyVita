@@ -11,6 +11,7 @@ class DietViewModel: BaseViewModel {
     
     let healthConcernResponder: HealthConcernResponder
     let allergeyResponder: AllergeyResponder
+    let stateManagementResponder: StateManagementResponder
     
     public private(set) var isSelectedNone: Bool = false
     
@@ -18,14 +19,15 @@ class DietViewModel: BaseViewModel {
     @Published public private(set) var buttonEnabled = false
     var selectedDietData: [DietVO] = []
     
-    init(healthConcernResponder: HealthConcernResponder, allergeyResponder: AllergeyResponder) {
+    init(healthConcernResponder: HealthConcernResponder, allergeyResponder: AllergeyResponder, stateManagementResponder: StateManagementResponder) {
         self.healthConcernResponder = healthConcernResponder
         self.allergeyResponder = allergeyResponder
+        self.stateManagementResponder = stateManagementResponder
         super.init()
-        self.loadHealthConcernList()
+        self.loadDietList()
     }
     
-    func loadHealthConcernList() {
+    func loadDietList() {
         if let dataContainer: DataContainer = loadJSON(fileName: "diets", type: DataContainer<DietVO>.self) {
             self.dietData.append(contentsOf: dataContainer.data)
         }
@@ -38,6 +40,7 @@ class DietViewModel: BaseViewModel {
     
     @objc
     func onTapNext() {
+        stateManagementResponder.saveDiets(isSelectedNone ? [] : selectedDietData)
         allergeyResponder.navigateToAllergey()
     }
     

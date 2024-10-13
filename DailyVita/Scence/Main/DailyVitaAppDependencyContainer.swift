@@ -49,7 +49,7 @@ class DailyVitaAppDependencyContainer {
     }
     
     func makeHealthConcernViewModel() -> HealthConcernViewModel {
-        return HealthConcernViewModel(welcomeResponder: sharedViewModel, dietResponder: sharedViewModel)
+        return HealthConcernViewModel(welcomeResponder: sharedViewModel, dietResponder: sharedViewModel, stateMangementResponder: sharedViewModel)
     }
     
     func makeDietViewController() -> DietViewController {
@@ -58,7 +58,7 @@ class DailyVitaAppDependencyContainer {
     }
     
     func makeDietViewModel() -> DietViewModel {
-        return DietViewModel(healthConcernResponder: sharedViewModel, allergeyResponder: sharedViewModel)
+        return DietViewModel(healthConcernResponder: sharedViewModel, allergeyResponder: sharedViewModel, stateManagementResponder: sharedViewModel)
     }
     
     func makeDailyRoutineViewController() -> DailyRoutineViewController {
@@ -67,7 +67,7 @@ class DailyVitaAppDependencyContainer {
     }
     
     func makeDailyRoutineViewModel() -> DailyRoutineViewModel {
-        return DailyRoutineViewModel()
+        return DailyRoutineViewModel(getPersonzlzedVitamin: sharedViewModel, stateManagementResponder: sharedViewModel)
     }
     
     func makeAllergyViewController() -> AllergeyViewController {
@@ -76,6 +76,6 @@ class DailyVitaAppDependencyContainer {
     }
     
     func makeAllergyViewModel() -> AllergeyViewModel {
-        return AllergeyViewModel()
+        return AllergeyViewModel(dailyRoutineResponder: sharedViewModel, dietResponder: sharedViewModel, stateManagementResponder: sharedViewModel)
     }
 }

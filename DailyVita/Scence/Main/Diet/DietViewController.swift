@@ -65,6 +65,68 @@ class DietViewController: BaseViewController {
             }.store(in: &subscriptions)
         
     }
+    
+    // MARK: Show Tooltip
+    
+    func showTooltip(at sourceView: UIView, index: Int) {
+        // Create a tooltip label
+        let tooltipLabel = UILabel()
+        tooltipLabel.text = viewModel.dietData[index].tool_tip
+        tooltipLabel.backgroundColor = .white
+        tooltipLabel.textColor = .gray
+        tooltipLabel.font = UIFont.systemFont(ofSize: 14)
+        tooltipLabel.numberOfLines = 0
+        tooltipLabel.textAlignment = .center
+        tooltipLabel.layer.cornerRadius = 8
+        tooltipLabel.layer.masksToBounds = true
+        
+        // Set tooltip dimensions
+        let tooltipWidth: CGFloat = 200
+        let tooltipHeight: CGFloat = calculateHeightForText(viewModel.dietData[index].tool_tip, font:  UIFont.systemFont(ofSize: 14), width: 200) + 30
+        
+        // Convert the frame of sourceView to the main view's coordinate space
+        if let superview = sourceView.superview {
+            let convertedFrame = superview.convert(sourceView.frame, to: self.view)
+            
+            // Calculate the tooltip's frame (positioned above the icon button)
+            let tooltipX = convertedFrame.midX - tooltipWidth / 2
+            let tooltipY = convertedFrame.minY - tooltipHeight - 10
+            let tooltipFrame = CGRect(x: tooltipX, y: tooltipY, width: tooltipWidth, height: tooltipHeight)
+            
+            tooltipLabel.frame = tooltipFrame
+            tooltipLabel.alpha = 0.0
+            
+            // Add the tooltip to the view controller's view
+            self.view.addSubview(tooltipLabel)
+            
+            // Animate the tooltip appearance
+            UIView.animate(withDuration: 0.3) {
+                tooltipLabel.alpha = 1.0
+            }
+            
+            // Auto-hide the tooltip after 2 seconds
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                UIView.animate(withDuration: 0.3, animations: {
+                    tooltipLabel.alpha = 0.0
+                }) { _ in
+                    tooltipLabel.removeFromSuperview()
+                }
+            }
+        }
+    }
+    
+    func calculateHeightForText(_ text: String, font: UIFont, width: CGFloat) -> CGFloat {
+        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+        
+        let boundingBox = text.boundingRect(
+            with: constraintRect,
+            options: [.usesLineFragmentOrigin, .usesFontLeading],
+            attributes: [NSAttributedString.Key.font: font],
+            context: nil
+        )
+        
+        return ceil(boundingBox.height)
+    }
 
 }
 
@@ -77,6 +139,12 @@ extension DietViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeReuseCell(type: DietCVCell.self, indexPath: indexPath)
         cell.setupData(name: viewModel.dietData[indexPath.item].name, isChecked: viewModel.isSelectedItem(at: indexPath.item) , isNone: indexPath.item != 0 )
+        // Handle icon tap and show tooltip
+        cell.didTapInfo = { [weak self] in
+            guard let strongSelf = self else { return }
+            debugPrint("Tap info")
+            strongSelf.showTooltip(at: cell.ivInfo, index: indexPath.item)
+        }
         return cell
     }
     

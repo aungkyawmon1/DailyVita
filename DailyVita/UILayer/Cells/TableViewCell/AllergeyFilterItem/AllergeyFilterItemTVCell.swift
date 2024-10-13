@@ -8,6 +8,14 @@
 import UIKit
 
 class AllergeyFilterItemTVCell: UITableViewCell {
+    
+    @IBOutlet weak var lblAllergey: UILabel!
+    
+    var allergyVO: AllergeyVO? {
+        didSet {
+            lblAllergey.text = allergyVO?.name
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

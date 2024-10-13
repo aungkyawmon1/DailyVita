@@ -12,6 +12,7 @@ class HealthConcernViewModel: BaseViewModel {
     
     let welcomeResponder: WelcomeResponder
     let dietResponder: DietResponder
+    let stateManagementResponder: StateManagementResponder
     
     var tempSelectedHealthConcernData: [HealthConcernVO] = []
     
@@ -19,9 +20,10 @@ class HealthConcernViewModel: BaseViewModel {
     @Published public private(set) var selectedHealthConcernData: [HealthConcernVO] = []
     @Published public private(set) var buttonEnabled = false
     
-    init(welcomeResponder: WelcomeResponder, dietResponder: DietResponder) {
+    init(welcomeResponder: WelcomeResponder, dietResponder: DietResponder, stateMangementResponder: StateManagementResponder) {
         self.welcomeResponder = welcomeResponder
         self.dietResponder = dietResponder
+        self.stateManagementResponder = stateMangementResponder
     
         super.init()
         self.loadHealthConcernList()
@@ -40,6 +42,7 @@ class HealthConcernViewModel: BaseViewModel {
     
     @objc
     func onTapNext() {
+        stateManagementResponder.saveHealthConcerns(selectedHealthConcernData)
         dietResponder.navigateToDiet()
     }
     
@@ -89,7 +92,7 @@ class HealthConcernViewModel: BaseViewModel {
     }
     
     func isSelectedValue(at item: Int ) -> Bool {
-        for (index, value) in tempSelectedHealthConcernData.enumerated() {
+        for (_, value) in tempSelectedHealthConcernData.enumerated() {
             if value == healthConcernData[item] {
                 return true
             }

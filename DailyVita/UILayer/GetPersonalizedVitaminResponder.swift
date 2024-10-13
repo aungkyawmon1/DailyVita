@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol GetPersonalizedVitaminResponder {
+    func getPersonalizedVitamin()
+}

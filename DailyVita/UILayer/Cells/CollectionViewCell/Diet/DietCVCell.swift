@@ -13,9 +13,15 @@ class DietCVCell: UICollectionViewCell {
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var ivInfo: UIImageView!
     
+    var didTapInfo: (() -> Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        let tapInfo = UITapGestureRecognizer(target: self, action: #selector(onTapInfo))
+        ivInfo.isUserInteractionEnabled = true
+        ivInfo.addGestureRecognizer(tapInfo)
     }
     
     func setupData(name: String, isChecked: Bool, isNone: Bool) {
@@ -25,4 +31,8 @@ class DietCVCell: UICollectionViewCell {
         ivInfo.isHidden = !isNone
     }
 
+    @objc
+    func onTapInfo() {
+        didTapInfo?()
+    }
 }
