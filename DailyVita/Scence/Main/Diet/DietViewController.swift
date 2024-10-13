@@ -67,7 +67,6 @@ class DietViewController: BaseViewController {
     }
     
     // MARK: Show Tooltip
-    
     func showTooltip(at sourceView: UIView, index: Int) {
         // Create a tooltip label
         let tooltipLabel = UILabel()

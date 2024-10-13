@@ -53,7 +53,6 @@ class HealthConcernViewController: BaseViewController {
         collectionViewHealthConcern.delegate = self
         collectionViewHealthConcern.dataSource = self
         collectionViewHealthConcern.isScrollEnabled = false
-        // Enable multiple selection
         collectionViewHealthConcern.allowsMultipleSelection = true
         let ansLayout = UICollectionViewLeftLayout()
         ansLayout.spacing = 10.0
@@ -140,8 +139,6 @@ extension HealthConcernViewController: UICollectionViewDelegate, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        
         // Calculate the size that fits the label's text
         let labelWidth = calculateTextWidth(text: viewModel.healthConcernData[indexPath.item].name, font: UIFont.systemFont(ofSize: 17))
         
@@ -169,7 +166,6 @@ extension HealthConcernViewController: UITableViewDelegate, UITableViewDataSourc
     }
     
     // MARK: - Drag Delegate Methods
-    
     func tableView(_ tableView: UITableView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
         debugPrint("Perform drag")
         let healthConcern = viewModel.selectedHealthConcernData[indexPath.row]
